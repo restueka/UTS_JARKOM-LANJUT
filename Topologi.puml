@@ -1,0 +1,30 @@
+@startuml Topologi_Jaringan_Lanjut
+
+title Topologi Jaringan Lanjut - UTS Jarkom Lanjut
+
+' Deklarasi Router
+node "Router R1 (KHI)" as R1
+node "Router R2 (KJ)" as R2
+node "Router R3 (CR)" as R3
+
+' Deklarasi PC
+node "PC1" as PC1
+node "PC2" as PC2
+node "PC3" as PC3
+
+' Koneksi antar router
+R1 -[hidden]-> R2 : Eth3: 19.19.19.1 <--> 19.19.19.2
+R1 -[hidden]-> PC1 : Eth2: 192.168.2.1/24
+R2 -[hidden]-> PC2 : Eth2: 192.168.1.1/24
+R3 -[hidden]-> PC3 : Eth2: 192.168.40.1/24
+
+' Koneksi antara Router R3 dengan subnet yang lain
+R3 -[hidden]-> R1 : Eth3: 27.27.27.1 <--> 27.27.27.2
+R3 -[hidden]-> R2 : Eth4: 33.33.33.1 <--> 33.33.33.2
+
+' Labeling dan Routing
+note left of R1 : Routing Protocol: RIP
+note left of R2 : Routing Protocol: RIP
+note left of R3 : Routing Protocol: RIP
+
+@enduml
