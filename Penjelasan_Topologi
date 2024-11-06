@@ -1,0 +1,23 @@
+## Deskripsi Topologi
+
+### 1. Router R1 (KHI)
+- **Interface Ethernet 2 (Eth2)**: IP Address `192.168.2.1/24`
+- **Interface Ethernet 3 (Eth3)**: IP Address `19.19.19.1`  
+- Terhubung dengan Router R2 pada antarmuka Eth3 yang menggunakan alamat IP 19.19.19.2.
+
+### 2. Router R2 (KJ)
+- **Interface Ethernet 2 (Eth2)**: IP Address `192.168.1.1/24`
+- **Interface Ethernet 3 (Eth3)**: IP Address `19.19.19.2`  
+- Terhubung dengan Router R1 pada antarmuka Eth3 yang memiliki IP `18.18.18.1`.
+
+### 3. Router R3 (CR)
+- **Interface Ethernet 3 (Eth3)**: IP Address `27.27.27.1`
+- **Interface Ethernet 4 (Eth4)**: IP Address `33.33.33.1`
+- **Interface Ethernet 4 (Eth4)**: IP Address `33.33.33.2`
+
+### Koneksi Antar Router
+- **Router R1** dan **Router R2** dihubungkan melalui interface **Eth3** masing-masing dengan IP `19.19.19.1` dan `19.19.19.2`.
+- **Router R3** memiliki antarmuka tambahan untuk koneksi ke jaringan yang berbeda, dengan IP `27.27.27.1` dan `33.33.33.1/33.33.33.2`.
+
+## Protokol Routing
+Topologi ini menggunakan **Routing Information Protocol (RIP)** sebagai protokol routing. RIP membantu dalam menentukan jalur terbaik antar router untuk memastikan setiap perangkat dalam jaringan ini dapat saling terhubung dan bertukar data melalui rute yang optimal.
