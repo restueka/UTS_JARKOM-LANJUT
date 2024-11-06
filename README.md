@@ -1,1 +1,6 @@
 # UTS_JARKOM-LANJUT
+Jawaban
+1. Routing statis adalah metode pengaturan rute dalam jaringan komputer di mana administrator jaringan secara manual menentukan jalur yang akan digunakan untuk mengirimkan data antar perangkat. Dalam routing statis, rute ditetapkan secara permanen dan tidak berubah kecuali administrator melakukan perubahan secara manual.
+2. Routing dinamis adalah metode pengiriman data dalam jaringan komputer di mana rute atau jalur yang digunakan untuk mengirimkan paket data ditentukan secara otomatis oleh protokol routing. Berbeda dengan routing statis, di mana rute ditentukan secara manual dan tidak berubah kecuali diubah oleh administrator jaringan, routing dinamis memungkinkan router untuk saling bertukar informasi tentang topologi jaringan dan kondisi jalur secara real-time.
+3. Firewall adalah sistem keamanan jaringan yang berfungsi untuk mengontrol dan memantau lalu lintas data yang masuk dan keluar dari jaringan komputer atau perangkat tertentu. Tujuan utama dari firewall adalah untuk melindungi jaringan dari akses yang tidak sah, serangan, dan ancaman keamanan.
+4. NAT adalah teknik yang digunakan dalam jaringan komputer untuk mengubah alamat IP dalam header paket data saat melewati router atau perangkat jaringan
